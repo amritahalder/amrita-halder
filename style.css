@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Caveat', cursive;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+h1 a {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+header p {
+  font-size: 24px;
+}
+
+header span {
+  font-size: 50px;
+  margin-left: 20px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+section p,
+section li {
+  font-size: 20px;
+}
+
+.spacing {
+  margin: 50px 0;
+}
+
+.works {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.work {
+  width: 49%;
+  margin-right: 2%;
+  margin-bottom: 20px;
+}
+
+.work:nth-child(2n) {
+  margin-right: 0;
+}
+
+.work video {
+  max-width: 100%;
+  display: block;
+}
+
+.work div {
+  box-shadow: 0 0 5px rgba(0,0,0,0.15)
+}
+
+.work h3 {
+  font-size: 30px;
+  color: #22c0ae;
+  text-decoration: underline;
+  margin-top: 10px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    max-width: 90%;
+  }
+
+  h1 a {
+    width: 100px;
+    height: 100px;
+  }
+
+  header span {
+    font-size: 30px;
+    margin-left: 10px;
+  }
+
+  .work {
+    width: 100%;
+    margin: 0 0 10px;
+  }
+
+  .work h3 {
+    font-size: 24px;
+  }
+}
